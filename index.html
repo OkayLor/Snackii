@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snackii - Your Smart Food Companion at RP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="Snackii Logo" class="logo-img">
+                <span class="brand-name">Snackii</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#benefits" class="nav-link">Why Snackii?</a>
+                <a href="#chatbot" class="nav-link chat-btn-nav">Chat with Snackii</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Meet <span class="brand-highlight">Snackii</span></h1>
+                    <p class="hero-subtitle">Your AI-Powered Food Companion at Republic Polytechnic</p>
+                    <p class="hero-description">
+                        Finding the perfect meal shouldn't be a hassle. Snackii is an intelligent AI assistant designed 
+                        specifically for RP students to discover food options that match your exact needs—whether it's 
+                        location, budget, dietary preferences, or cuisine type.
+                    </p>
+                    <div class="hero-features">
+                        <div class="feature-tag">📍 Location-Based</div>
+                        <div class="feature-tag">💰 Budget-Friendly</div>
+                        <div class="feature-tag">🥗 Dietary Preferences</div>
+                        <div class="feature-tag">⚡ Instant Recommendations</div>
+                    </div>
+                    <a href="#chatbot" class="cta-button">Start Chatting Now</a>
+                </div>
+                <div class="hero-image">
+                    <img src="logo.png" alt="Snackii Logo" class="hero-logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose Snackii?</h2>
+            <p class="section-subtitle">Discover how Snackii makes your food search effortless</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>Personalized Recommendations</h3>
+                    <p>Get food suggestions tailored to your specific preferences, dietary restrictions, and budget constraints.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Lightning Fast</h3>
+                    <p>No more scrolling through endless menus. Get instant answers to your food queries in seconds.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🗺️</div>
+                    <h3>Campus-Specific</h3>
+                    <p>Built specifically for RP students with comprehensive knowledge of all on-campus and nearby food options.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">💬</div>
+                    <h3>Natural Conversations</h3>
+                    <p>Chat naturally with Snackii like you would with a friend. No complicated forms or filters needed.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌱</div>
+                    <h3>Dietary Aware</h3>
+                    <p>Whether you're vegetarian, vegan, halal, or have specific allergies, Snackii understands your needs.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">💸</div>
+                    <h3>Budget Conscious</h3>
+                    <p>Find delicious meals that fit your student budget without compromising on quality or taste.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot Section -->
+    <section id="chatbot" class="chatbot-section">
+        <div class="container">
+            <h2 class="section-title">Chat with Snackii</h2>
+            <p class="section-subtitle">Ask me anything about food at RP!</p>
+            
+            <div class="chatbot-container">
+                <div class="chat-box">
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="message bot-message">
+                            <div class="message-avatar">
+                                <img src="logo.png" alt="Snackii">
+                            </div>
+                            <div class="message-content">
+                                <p>Hello! I'm Snackii, your food companion at RP. How can I help you find the perfect meal today?</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="quick-prompts" id="quickPrompts">
+                        <p class="prompts-label">Quick Questions:</p>
+                        <button class="prompt-button" data-prompt="What are the halal options?">🥘 What are the halal options?</button>
+                        <button class="prompt-button" data-prompt="What are some vegetarian options?">🌱 What are some vegetarian options?</button>
+                        <button class="prompt-button" data-prompt="Recommend me foods which are budget friendly">💰 Recommend me foods which are budget friendly</button>
+                    </div>
+                    
+                    <div class="chat-input-container">
+                        <input 
+                            type="text" 
+                            id="chatInput" 
+                            class="chat-input" 
+                            placeholder="Ask me about food options..."
+                            autocomplete="off"
+                        >
+                        <button id="sendButton" class="send-button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Snackii - Making food discovery delightful at RP</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
